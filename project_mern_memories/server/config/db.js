@@ -6,13 +6,14 @@ let connectString = `mongodb+srv://` +                                          
                     `:${encodeURIComponent(process.env.MDB_APIKEY)}` +          // auth: pw, auth token, etc.
                     `@${process.env.MDB_APPID}.${process.env.MDB_SERVER}` +     // full server name
                     `/${process.env.MDB_DATABASE}`                              // any "path"
-console.debug("connectString: " + connectString)
+console.log("DEBUG: connectString: " + connectString)
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect(connectString)
+        const conn = await mongoose.connect(connectString, { useNewUrlParser: true, useUnifiedTopology: true })
         console.log(`mongodb connected: ${conn.connection.host}`)
     } catch (error) {
+        console.log(`DEBUG: DB Connection Failed!`)
         console.log(`error ${error.message}`)
     }
 }
@@ -24,3 +25,7 @@ export default connectDB
 let targetCollection = 'test';
 await mongoose.connect(connectString, {'collection': targetCollection});
  */
+
+
+// const CONNECTION_URL =
+//   "mongodb+srv://ariestitt:mokube123@cluster0.jozbiey.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
