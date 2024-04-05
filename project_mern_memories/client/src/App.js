@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+// REPLACE
+// import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
+import { Container, AppBar, Typography, Grow, Grid } from '@mui';
+
 import { useDispatch } from 'react-redux';
 
 import Posts from './components/Posts/Posts';

@@ -1,6 +1,7 @@
+import 'dotenv/config';  // ES6 equivalent of `require('dotenv').config()`
 import axios from 'axios';
 
-const url = 'http://localhost:5000/posts';
+const url = `http://localhost:${process.env.MDB_PORT}/posts`;
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
