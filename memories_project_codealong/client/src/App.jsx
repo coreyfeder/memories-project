@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Container, AppBar, Typography, Grow, Grid } from "@mui/material";
 
-import memories from './images'
+import "./images/memories.png";
 
 function App() {
   const [count, setCount] = useState(0)
