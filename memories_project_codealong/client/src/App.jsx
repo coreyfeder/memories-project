@@ -2,11 +2,9 @@ import React from "react";
 import "./App.css";
 import { Container, AppBar, Typography, Grow, Grid } from "@mui/material";
 
-import "./images/memories.png";
+import memories from "./images/memories.png";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Container maxwidth="lg">
       <AppBar position="static" color="inherit">
