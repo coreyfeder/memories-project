@@ -1,6 +1,6 @@
-import React from 'react'
-import './App.css'
-import { Container, AppBar, Typography, Grow, Grid } from `@mui//material`
+import React from "react";
+import "./App.css";
+import { Container, AppBar, Typography, Grow, Grid } from "@mui/material";
 
 import memories from './images'
 
