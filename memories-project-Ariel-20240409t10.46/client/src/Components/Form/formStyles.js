@@ -63,5 +63,3 @@ export default styles
 //     marginBottom: 10,
 //   },
 // };
-
-

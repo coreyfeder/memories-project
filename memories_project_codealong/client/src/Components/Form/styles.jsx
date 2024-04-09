@@ -1,5 +1,6 @@
 // import { makeStyles } from '@material-ui/core/styles';
-import { createTheme } from '@mui/styles';
+// import { createTheme } from '@mui/styles';
+// import { createTheme } from '@mui/material/styles';
 
 const styles = (theme) => {
   ({
@@ -25,3 +26,5 @@ const styles = (theme) => {
     },
   });
 };
+
+export default styles
