@@ -17,7 +17,7 @@ const HiddenFileGrabber = styled('input')({
     // onDone={({ fileData }) => setPostData({ ...postData, selectedFile: fileData })}
 });
 
-export default function InputFileUpload() {
+function InputFileUpload() {
     return (
         <Button
             component="Upload"
@@ -37,3 +37,5 @@ export default function InputFileUpload() {
         </Button>
     );
 }
+
+export default InputFileUpload;

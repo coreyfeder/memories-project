@@ -23,14 +23,16 @@ function App() {
         <Typography sx={styles.heading} variant='h2' align='center'>
           Memories
         </Typography>
-        <img sx={styles.image} src={memories} alt='memories' height='60' />
+        {/* <img sx={styles.image} src={memories} alt='memories' height='60' /> */}
+        <img sx={styles.headingStyle} src={memories} alt='memories' height='60' />
       </AppBar>
       <Grow in>
         <Container>
           <Grid
             container
-            justify='space-between'
-            alignItems='stretch'
+            justify="space-between"
+            justifyContent="space-between"
+            alignItems="stretch"
             spacing={3}
           >
             <Grid item xs={12} sm={7}>

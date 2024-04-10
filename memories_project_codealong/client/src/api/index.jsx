@@ -1,7 +1,7 @@
-import "dotenv/config";
 import axios from "axios";
+import { serverport } from "../../../constants.jsx";
 
-const url = `http://localhost:${process.env.MEMORY_PORT+1}/posts`
+const url = `http://localhost:${ serverport }/posts`
 
 export const fetchPosts = () => axios.get(url)
 

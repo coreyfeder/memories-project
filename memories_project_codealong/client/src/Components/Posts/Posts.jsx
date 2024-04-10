@@ -1,7 +1,7 @@
 import React from 'react'
 import Post from './Post/Post.jsx'
 import {useSelector} from 'react-redux'
-import styles from "./styles.jsx"
+// import styles from "./styles.jsx"
 
 
 function Posts() {

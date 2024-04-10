@@ -2,7 +2,7 @@
 // import { createTheme } from '@mui/styles';
 // import { createTheme } from '@mui/material/styles';
 
-const styles = (theme) => {
+const useStyles = (theme) => {
   ({
     root: {
       "& .MuiTextField-root": {
@@ -27,4 +27,4 @@ const styles = (theme) => {
   });
 };
 
-export default styles
+export default useStyles

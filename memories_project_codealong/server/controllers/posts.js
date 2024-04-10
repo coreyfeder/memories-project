@@ -1,5 +1,5 @@
 
-import PostMessage from ""../models/postMessage.js"
+import PostMessage from "../models/postMessage.js"
 
 export const getPosts = (req, res) => {
     try {
