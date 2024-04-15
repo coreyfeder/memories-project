@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Container maxWidth='lg'>
-      <AppBar sx={styles.appBar} position='static' color='inherit'>
+      <AppBar sx={styles.appBarStyle} position='static' color='inherit'>
         <Typography sx={styles.heading} variant='h2' align='center'>
           Memories
         </Typography>
